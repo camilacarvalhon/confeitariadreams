@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+*{margin:0;padding: 0;}
+
+body{
+  background-color: rgb(255,255,255);
+}
+
+nav{
+  width: 99%;
+  margin: 0 auto;
+  background-color:#A44633;
+  text-align:right;
+  padding:20px;
+  position: sticky;
+  top: 0;
+}
+#logo-topo{
+   font:1.5rem 'Kaushan Script', sans-serif;
+   float: left;
+   color:white;
+}
+
+a{
+  font:1.2rem 'Kumbh Sans', sans-serif;
+    text-decoration: none;
+   
+}
+.a-menu{
+   margin-right:30px; 
+   font-weight:bold;
+}
+
+.a-menu:link, .a-menu:visited{
+  color:white;
+}
+.a-menu:hover, .a-menu:active{
+  color:#000;
+}
+
+header, img{
+  margin: 0 auto;
+  width:100%;
+  height: 230px;
+}
+
+h1{
+    font:1.5rem 'Kaushan Script', cursive;
+    color:#000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section{
+    padding:12px;
+    margin: 0 auto;
+}
+
+#menu-sobre{
+  display: flex;
+}
+
+#menu-sobre-m{
+  padding-left: 3%;
+  width: 200%;
+  height: 200%;
+}
+h2{
+  font:2.3rem 'Kaushan Script', cursive;
+  color:#A44633;
+  margin: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+p{
+  font:1.2rem 'Kumbh Sans', sans-serif; 
+  text-align: justify;
+  margin-bottom: 10px;
+  color: gray;
+  margin-left: 5px;
+}
+
+#pag-produtos{
+    background:#ffff; 
+    padding-bottom:15px;
+}
+
+#pag-produtos p{
+  font:1.2rem 'Kumbh Sans', sans-serif; 
+  text-align: center;
+  margin-bottom: 10px;
+  color: gray;
+  margin-top: 30px;
+
+}
+#pag-produtos h3{
+  font:1.6rem 'Kaushan Script', cursive;
+  color:black;
+  margin:10px;
+  margin-bottom:5px;
+  text-align:center;
+}
+
+.gif{
+
+  padding: 5px;
+  border-radius: 20px;
+
+}
+.anuncio{
+  display: block;
+   width:600px;
+   height: 200px;
+  }
+
+#container{
+  display: flex;
+ 
+}
+
+.card{
+  background-color: #FFF;
+  margin: 10px;
+  width: 22%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px #777;
+  transition: 0.3s; 
+  text-align:center;
+}
+.card:hover{
+  box-shadow: 0 8px 16px #777;
+}
+.card-content{
+  padding: 5px;
+  display:flex;
+  text-align:center;
+}
+
+.btn{
+  background-color: pink;
+  border-color:#f8bbd0 ;
+  border-radius: 4px;
+  font-size: 16px;
+  display:inline-block;
+  cursor:pointer;
+  font-family:Kumbh Sans;
+  padding:6px;
+  text-decoration:none;
+
+
+}
+#sugestao{
+  margin-bottom: : 20px;
+ 
+
+}
+#sugestao p{
+  font-size: 20px;
+  text-align:left; ;
+
+}
+
+/*Stick icon bar*/
+.icon-bar {
+  position: fixed;
+  top: 63%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ 
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display:block;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: #000;
+  font-size: 22px
+}
+.instagram, .whatsapp, .facebook{
+  background: #ccc;
+
+}
+.img-icones{
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+footer{
+  background-color:#000;
+  padding: 18px;
+  width: 97.5%;
+  margin: 0 auto;
+}
+
+footer p{
+  font:1.2rem 'Kumbh Sans', sans-serif; 
+  text-align: center;
+  color:#fff;
+}
+
+footer a{
+  color:#fff;
+  font:1.1rem 'Kumbh Sans', sans-serif;
+}
+
+footer a:hover{
+  color:#A44633;
+}

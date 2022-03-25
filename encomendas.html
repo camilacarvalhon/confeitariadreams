@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Marcus Vinicius, Camila Nascimento, Ana Padilha" />
+		<meta name="keywords" content="Doces, Confeitaria" />
+        <meta name="description" content="Site que contém doces sobre encomendas, e partes de confeitaria" />
+        <title>Encomendas</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+    </head>
+    
+	<body>
+        
+        <nav>
+            <a id="logo-topo"> Confeitaria Dreams</a>
+            <a class="a-menu" href="index.html"> HOME </a>  
+            <a class="a-menu" href="index.html#sobre"> SOBRE </a>   
+            <a class="a-menu" href="index.html#pag-produtos"> MENU </a> 
+            <a class="a-menu" href="promocao.html"> PROMOÇÕES </a>  
+            <a class="a-menu" href="encomendas.html"> ENCOMENDAS </a>
+        </nav>
+        <header>
+            <img src="img/img3.png" alt-="banner contendo a logo da confeitaria dreams" >
+        </header>
+
+        <section id="pag-encomenda">
+            
+                <h3 id="encomenda">Encomendas</h3>
+
+            <form name="" method="" action="">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" name="nome" placeholder=" Seu nome" required />
+
+                <label for="celular">Contato</label>
+				<input id="celular" type="tel" name="celular" placeholder=" Ex: (99) 91234-5678" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" required />
+
+            <div id="produto-Quantidade">
+                <div id="produtos">
+                    <label for="produto">Produto</label>
+
+                    <select id="produto" name="produto" >
+                        <option value="" class="Place">Produtos</option>
+                        <option value="BoloFubá">Bolo de fubá (R$ 15.00)</option>
+                        <option value="BoloMilho">Bolo de milho (R$ 15.00)</option>
+                        <option value="BoloBanana">Bolo de banana (R$ 17.00)</option>
+                        <option value="BoloQueijo">Bolo de queijo (R$ 20.00)</option>
+                        <option value="BoloCenoura">Bolo de cenoura (R$ 13.00)</option>
+                        <option value="BoloMesclado">Bolo mesclado (R$ 18.00)</option>
+                        <option value="BoloRosa">Bolo decorado rosa (R$ 45.90)</option>
+                        <option value="BoloBranco">Bolo decorado branco (R$ 45.90)</option>
+                        <option value="BoloDoceAbacaxi">Bolo de Doce de leite-abacaxi (R$ 50.00)</option>
+                        <option value="BoloBrigadeiro">Bolo Brigadeiro (R$ 45.00)</option>
+                        <option value="BoloMaracuja">Bolo mousse de Maracujá (R$ 55.00)</option>
+                        <option value="BoloMorango">Bolo de Morango (R$ 40.00)</option>
+                        <option value="TrufasPers">Trufas Pers. (R$ 5.00)</option>
+                        <option value="TrufasTrad">Trufas Trad. (R$ 3.00)</option>
+                        <option value="TrufasPersChoco">Trufa Pers. Chocolate (R$ 4.50)</option>
+                        <option value="TrufasMorango">Trufa de Morango (R$ 3.00)</option>
+                        <option value="TrufasMaracuja">Trufa de Maracujá (R$ 3.20)</option>
+                        <option value="TrufasPersCoco">Trufa pers. de coco (R$ 3.00)  </option>
+                        <option value="Sequilho">Sequilho (R$ 6.00)</option>
+                        <option value="BolachaNata">Bolacha de Nata (R$ 6.00)</option>
+                        <option value="Cooks">Cooks (R$ 5.00)</option>
+                        <option value="BolachaTracos">Bolacha Traços (R$ 4.00)</option>
+                        <option value="CooksM&M">Cooks Mesclado com M&M's (R$ 11.00)</option>
+                        <option value="CookieNY">Cookie clássico Estilo NY (R$ 11.20)</option>
+                        <option value="CookieRED">Cookie Red velvet com C. Branco (R$ 10.00)</option>
+                        <option value="DocesChocolate">Doces de Chocolate (R$ 50.00)</option>
+                        <option value="DocesBeijinho">Doce beijinho (R$ 50.00)</option>
+                        <option value="DoceMorango">Doce moranguinho (R$ 50.00)</option>
+                        <option value="DoceMaracuja">Doce Maracujá (R$ 50.00)</option>
+                    </select>
+                </div>
+
+                <div id="quantidades">
+                    <label for="quantidade">Quantidade</label>
+            
+                    <select id="quantidade" name="quantidade" >
+                        <option value="" class="place">Quantidade de Produtos</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+                <div id="data-retirada">
+                    <label for="data">Data de entrega/retirada</label>
+                    <input id="data" type="date" name="data" required/>
+                </div>
+
+                <label for="instituicao">Formas de pagamento</label>
+                <select name="instituicao" id="instituicao" required>
+                    <option value="">Selecione o método desejado</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option id="novoCartao" value="novoCartao">Cartão</option>
+                </select><br>
+
+                <div id="hidden_div" style="display: none;">
+                    <label id="Titular-cartao" for="Titular">Nome do titular do cartão</label><br/>
+                    <input type="text" name="Titular-cartao" id="Titular" placeholder=" Digite o nome completo do titular do cartão" required /><br>
+                    <div id="flex"></div>
+                    <label id="cpf-titular" for="cpf">CPF</label><br/>
+                    <input type="text" name="cpf-titular" id="cpf" placeholder=" Digite seu CPF (Sem pontos e traços)" onblur="testadorCPF()" required /><br>
+
+                <div id="flex">
+                        <div id="Num">
+                            <label id="numCartao" for="numero-do-cartao">Número do cartão</label><br/>
+                            <input type="text" name="numCartao" id="numero-do-cartao" placeholder=" Ex: 1234 5678 9101 1121" required /><br>
+                        </div>
+
+                        <div id="cv">
+                            <label id="senha" for="senha">CV</label><br/>
+                            <input type="text" name="senha-do-cartao" id="senha" placeholder="Ex: 123" required /><br>
+                        </div>
+                </div>
+                <div id="data-venci">
+                        <label for="data">Data de vencimento</label>
+                        <input id="data" type="date" name="data" required />
+                    </div>        
+                    </div>
+
+                <div id ="form-retirada">
+                    <label for="forma-retirada">Forma de retirada</label>
+                    <select name="retirada" id="forma-retirada" required>
+                        <option value="" class="place">Escolha a forma de retirada</option>
+                        <option value="retirarda-local">Retirada no local</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div>
+
+                <label for="Info">Informações adicionais</label><br/>
+    		    <textarea id="Info" cols="10" rows="2" placeholder=" Deseja adicionar e/ou remover alguma coisa?"></textarea>
+         </form>
+        </section>
+        <div id="botoes-form">
+                <input type="submit" name="bnt-conf" value="Confirmar" />
+                <input type="reset" name="btn-cancelar" value="Cancelar" />
+        </div>
+        <div class="icon-bar">
+          <a href="http://facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook">
+            <img class="img-icones" src="img/face.png" alt="imagem ilustrativa"></i></a>
+          <a href="http://instagram.com" target="_blank" class="instagram"><i class="fa fa-instagram">
+            <img class="img-icones" src="img/instagram.jpg" alt="imagem ilustrativa"></i></a>
+          <a href="http://whatsapp.com" target="_blank" class="whatsapp"><i class="fa fa-whatsapp">
+            <img class="img-icones" src="img/what.jpg" alt="imagem ilustrativa"></i></a>
+       </div>
+        <footer>
+            <p>Desenvolvido por <a href="" class="a-rodape">Ana Luísa</a>, <a href="" class="a-rodape">Camila Carvalho</a> e <a href="" class="a-rodape">Marcus Vinicius</a> - 2020</p>
+        </footer> 
+        <script src="scripts.js"></script>
+
+    </body>
+</html>

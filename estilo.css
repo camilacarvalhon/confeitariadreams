@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+*{margin:0;padding: 0;}
+
+body{
+	background-color: rgb(255,255,255);
+}
+
+nav{
+	width: 97%;
+  margin: 0 auto;
+	background-color:#A44633;
+  /*transition: background-color.4s ease-in-out;*/
+	text-align:right;
+	padding:20px;
+  position: sticky;
+  top: 0;
+}
+#logo-topo{
+   font:1.5rem 'Kaushan Script', sans-serif;
+   float: left;
+   color:white;
+}
+
+a{
+	font:1.2rem 'Kumbh Sans', sans-serif;
+    text-decoration: none;
+   
+}
+.a-menu{
+	 margin-right:30px; 
+   font-weight:bold;
+}
+
+.a-menu:link, .a-menu:visited{
+	color:white;
+}
+.a-menu:hover, .a-menu:active{
+	color:#000;
+}
+
+header, img{
+  margin: 0 auto;
+	width:100%;
+	height: 230px;
+}
+main{
+	display: flex;
+}
+/*
+=============== 
+Sidebar
+===============
+*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #b2ebf2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+#logo-menu{
+   font:1.4rem 'Kaushan Script', sans-serif;
+   color:#000;
+   padding-bottom: 10px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: gray;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/*End Sidebar*/
+
+h1{
+    font:1.5rem 'Kaushan Script', cursive;
+    color:#000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section{
+    padding:12px;
+}
+
+h2{
+	font:2.3rem 'Kaushan Script', cursive;
+	color:#A44633;
+	margin-bottom: 20px;
+	text-align: center;
+	
+}
+#pag-produtos{
+    background:#ffff; 
+    padding-bottom:15px;
+}
+
+#pag-produtos p{
+	font:1.2rem 'Kumbh Sans', sans-serif; 
+	text-align: center;
+	margin-bottom: 10px;
+	color: gray;
+
+}
+
+#container{
+	display:flex;
+	margin-top: 15px;
+	margin-bottom: 40px;
+  margin-right: 0.3%;
+	
+}
+
+.card{
+    background-color:white;
+    margin:5px;
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #aaa;
+    transition: 0.2s;
+    margin-right: 10px;
+}
+
+.card:hover{
+	box-shadow:0 8px 10px #bbb;
+}
+
+.card-content{
+	padding: 7px;
+	display: flex;
+}
+
+.card-content p{
+	  font:1rem 'Kumbh Sans', sans-serif; 
+    line-height: 15px;
+    color:#000;
+}
+.btn{
+   display: block;
+   text-align: center;
+   width: 96%;
+   height: 15%;
+   margin: 5px;
+   border-radius: 10px;
+   padding: 5px;
+   background-color:pink;
+   border-color:#f8bbd0 ;
+ }
+ .btn:hover{
+	box-shadow:0 0px 8px #fce4ec;
+ }
+
+h3{
+	font:1.1rem 'Kumbh Sans', cursive;
+	color:#000;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+
+}
+
+/*Stick icon bar*/
+.icon-bar {
+  position: fixed;
+  top: 63%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ 
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display:block;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: #000;
+  font-size: 22px
+}
+.instagram, .whatsapp, .facebook{
+  background: #cccc;
+
+}
+.img-icones{
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+footer{
+	background-color:#000;
+	padding: 18px;
+  width: 97.5%;
+  margin: 0 auto;
+}
+
+footer p{
+	font:1.2rem 'Kumbh Sans', sans-serif; 
+	text-align: center;
+	color:#fff;
+}
+
+footer a{
+	color:#fff;
+	font:1.1rem 'Kumbh Sans', sans-serif;
+}
+
+footer a:hover{
+	color:#A44633;
+}
+
+/*Página Menu Bolos-Trufas-Bolachas-Kits*/
+.pag-menu{
+   padding:20px;
+   margin-left: 26px;
+}
+
+#titulo-menu{
+  display: flex;
+  margin-left: 40%;
+}
+#titulo-menu h2{
+ font:2.3rem 'Kaushan Script', cursive;
+}
+
+#menu-titulo{
+    color:#A44633;
+}
+
+#container-menu{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.card-menu{
+    display: flex;
+    background-color:white;
+    margin:15px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #aaa;
+    transition: 0.2s;
+}
+
+.card-menu:hover{
+    box-shadow:0 8px 10px #bbb;
+}
+.card-content-menu{
+    padding: 5px;
+}
+
+.card-content-menu h3{
+ text-align: center;
+
+}
+
+.card-content-menu p{
+    font:1rem 'Kumbh Sans', sans-serif; 
+    line-height: 26px;
+    color:gray;
+    width: 400px; 
+    padding-top: 15px
+}
+.btn-menu{
+   display: block;
+   text-align: center;
+   width: 96%;
+   height: 15%;
+   margin: 5px;
+   border-radius: 10px;
+   background-color:pink;
+   border-color:#f8bbd0 ;
+   padding: 8px;
+ }
+
+.btn:hover{
+  box-shadow:0 0px 8px #fce4ec;
+ }
+
+/*Página do formulário*/
+#pag-encomenda
+{
+    margin: 0 auto;
+    width: 600px;
+}
+
+#encomenda
+{
+    padding-top: 1px;
+    font:2.3rem 'Kaushan Script', cursive;
+    color:#A44633;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+input, textarea, select
+{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    background-color:#ffffff;
+    border-radius: 13px;
+    color:#959595;
+}
+label, input, select, textarea
+{
+    font: 1.2rem 'Roboto', cursive;
+}
+option
+{
+    color: black;
+}
+::placeholder
+{
+    color:#959595;
+}
+.place
+{
+    color:#959595;
+}
+#produto-Quantidade
+{
+    display: flex;
+}
+#produtos
+{
+    width: 55%;
+    margin-right: 110px;
+}
+#quatindades
+{
+    width: 40%;
+}
+#data-retirada, #data-venci
+{
+    width: 40%;
+}
+/* Hidden Div */
+#flex
+{
+    display: flex;
+}
+#cpf
+{
+    width: 54%;
+    margin-bottom: 20px;
+}
+#numero-do-cartao
+{
+    width: 85%;
+}
+#cv
+{
+    width: 12%;
+    margin-left: 100px;
+}
+::placeholder
+{
+    font: 1.1rem 'Roboto', sans-serif;
+}
+/* Hidden Div */
+
+#botoes-form
+{
+    display: flex;
+}
+input[type = "submit"], input [type = "reset"]
+{
+    background-color: green;
+    color: white;
+    margin-top: 15px;
+    margin-right: 90px;
+    margin-left: 430px;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+input[type = "reset"]
+{
+    background-color: #f47e7e;
+    color:#fff;
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+
+
